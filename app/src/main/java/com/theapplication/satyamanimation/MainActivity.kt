@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.theapplication.satyamanimation.AnimatedStory.Show7InstaStory
 import com.theapplication.satyamanimation.Gamepad.Screen.HomeScreen
 import com.theapplication.satyamanimation.ThreadCard.ThreadsInviteCard
 import com.theapplication.satyamanimation.ui.theme.SatyamAnimationTheme
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
 
                     {
                        // ThreadsInviteCard()
-                        HomeScreen()
+                    //    HomeScreen()
+                        Show7InstaStory()
                     }
 
                 }
