@@ -77,6 +77,33 @@ https://github.com/user-attachments/assets/4bf8d006-74f8-4117-ae7c-7d0cc09e49cc
 
 
 
+### Day 3: Story Animation
+Simple Story composable.
+
+```kotlin
+@Composable
+fun rememberSharedAnimatableState(
+    animatableStates: List<AnimatableState>,
+    toTargetAnimationsSpec: AnimationSpec<Float>? = null,
+    toInitialAnimationsSpec: AnimationSpec<Float>? = null
+): SharedAnimatableState {
+    return remember {
+        SharedAnimatableState(
+            animatableStates = animatableStates,
+            toTargetAnimationsSpec = toTargetAnimationsSpec,
+            toInitialAnimationsSpec = toInitialAnimationsSpec
+        )
+    }
+}
+```
+## Day 3 demo
+
+https://github.com/user-attachments/assets/d2d173b1-e4ac-4287-8d73-b1ba9512807a
+
+
+
+
+
 
 
 
