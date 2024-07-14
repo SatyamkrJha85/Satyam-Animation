@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.compose.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,4 +73,5 @@ dependencies {
     implementation ("io.coil-kt:coil-compose:2.2.2")
     implementation ("dev.chrisbanes.snapper:snapper:0.3.0")
 
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.18.0")
 }

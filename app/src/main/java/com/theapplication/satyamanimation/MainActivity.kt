@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.theapplication.satyamanimation.AnimatedStory.Show7InstaStory
 import com.theapplication.satyamanimation.Gamepad.Screen.HomeScreen
 import com.theapplication.satyamanimation.ThreadCard.ThreadsInviteCard
+import com.theapplication.satyamanimation.WavesTimerAnimation.WavesTimerAnimation
 import com.theapplication.satyamanimation.ui.theme.SatyamAnimationTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +31,8 @@ class MainActivity : ComponentActivity() {
                     {
                        // ThreadsInviteCard()
                     //    HomeScreen()
-                        Show7InstaStory()
+                       // Show7InstaStory()
+                        WavesTimerAnimation()
                     }
 
                 }
