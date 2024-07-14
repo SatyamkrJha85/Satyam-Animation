@@ -41,3 +41,43 @@ https://github.com/SatyamkrJha85/Satyam-Animation/assets/111700337/292d2d84-2c23
 
 
 
+
+### Day 2: Game Pad Animation
+SimpleGame Pad composable.
+
+```kotlin
+ Position.values().forEach { position ->
+                    val offset = position.getOffset(buttonSizePx)
+                    MyButton(
+                        modifier = Modifier
+                            .offset {
+                                IntOffset(
+                                    x = offset.x.roundToInt(),
+                                    y = offset.y.roundToInt()
+                                )
+                            }
+                            .graphicsLayer {
+                                alpha = buttonAlpha.value
+                                scaleX = buttonAlpha.value
+                                scaleY = buttonAlpha.value
+                            }
+                            .size(buttonSize)
+                            .padding(8.dp)
+                        ,
+                        isSelected = position == currentPosition,
+                        position = position
+                    )
+                }
+
+            }
+```
+## Day 2 demo
+
+https://github.com/user-attachments/assets/4bf8d006-74f8-4117-ae7c-7d0cc09e49cc
+
+
+
+
+
+
+
