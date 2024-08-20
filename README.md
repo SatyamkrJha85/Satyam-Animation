@@ -102,6 +102,38 @@ https://github.com/user-attachments/assets/d2d173b1-e4ac-4287-8d73-b1ba9512807a
 
 
 
+// Day 4
+
+### Day 4: Wave Animation
+Water Wave composable.
+
+```kotlin
+ val wavesShader by produceState<Shader?>(
+            initialValue = null,
+            constraintsHeight,
+            constraintsWidth,
+            color,
+            density
+        ) {
+            value = withContext(Dispatchers.Default) {
+                createWavesShader(
+                    width = with(density) { constraintsWidth.roundToPx() },
+                    height = with(density) { constraintsHeight.roundToPx() },
+                    color = color
+                )
+            }
+        }
+```
+## Day 3 demo
+
+
+
+https://github.com/user-attachments/assets/e7bb3b1f-37b2-47a9-85fa-7965ecc9bd32
+
+
+
+
+
 
 
 
