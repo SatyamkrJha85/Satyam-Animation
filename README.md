@@ -5,7 +5,7 @@ Welcome to my **10 Days of Jetpack Compose Animations**! 🎉 In this series, I 
 ## Day-by-Day Breakdown
 
 ### Day 1: Thread Card Animation
-Simple Roatating Card composable.
+Simple Roatating Card composable..
 
 ```kotlin
  Card(
